@@ -1,6 +1,8 @@
 # Eink Dashboard
 Very hacked together, auto updating, eink dashboard.
 
+[Example Image](https://res.cloudinary.com/dbahelrej/image/upload/h_480,w_800/eink_weather)
+
 Eventually, the way this will work:
 - chron job on desktop that requests current/forecasted weather data, renders the dash in the browser, takes a screenshot of that and uploads it to cloudinary.
 - chron job on inky frame 7" that requests image from cloudinary and renders it to the display.
