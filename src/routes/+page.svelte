@@ -127,21 +127,14 @@
     <CardHeader class="bg-white" style="border-style: none;">
       <CardTitle>
         <Row style="color: rgb({data.colors.black.join(',')});">
-          <Col xs="4">
+          <Col xs="3">
             <h1>{weather.date}</h1>
           </Col>
-          <Col xs="5">
+          <Col xs="5" style="text-align: center;">
             <i class="wi wi-sunrise" /> {weather.displaySunrise()} | <i class="wi wi-sunset" /> {weather.displaySunset()}
           </Col>
-          <Col xs="3" style="text-align: right;">
+          <Col xs="4" style="text-align: right;">
             <h1>{weather.dayOfWeek}</h1>
-          </Col>
-        </Row>
-        <Row style="color: rgb({data.colors.black.join(',')});">
-          <Col xs="4">
-            <!--            {weather.pressure} <i class="wi wi-barometer" /> | {weather.humidity} <i class="wi wi-humidity" /> -->
-          </Col>
-          <Col xs="8" style="text-align: right;">
           </Col>
         </Row>
       </CardTitle>
@@ -149,18 +142,18 @@
 
     <CardBody class="pt-0 pb-0">
       <Row class="mt-4" style="color: rgb({data.colors.black.join(',')});">
-        <Col xs="2"></Col>
-        <Col xs="8" style="text-align: center; font-size: 5rem;">
+        <Col xs="3"></Col>
+        <Col xs="5" style="text-align: center; font-size: 5rem;">
           <b><i class="wi wi-{weather.icon}"/> {weather.temperature}<i class="wi wi-fahrenheit" /> </b>
         </Col>
-        <Col xs="2"></Col>
+        <Col xs="4"></Col>
       </Row>
       <Row style="margin-top: -25px; color: rgb({data.colors.black.join(',')});">
-        <Col xs="2"></Col>
-        <Col xs="8" style="text-align: center; font-size: 3rem;">
+        <Col xs="3"></Col>
+        <Col xs="5" style="text-align: center; font-size: 3rem;">
           <i><b>{weather.description} </b></i>
         </Col>
-        <Col xs="2"></Col>
+        <Col xs="4"></Col>
       </Row>
     </CardBody>
 
